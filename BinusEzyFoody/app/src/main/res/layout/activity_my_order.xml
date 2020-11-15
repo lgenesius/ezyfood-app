@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrderActivity">
+
+    <Button
+        android:id="@+id/payNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/green"
+        android:text="Pay Now"
+        app:backgroundTint="@color/green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Order List"
+        android:layout_below="@+id/payNowButton"
+        android:layout_marginTop="40sp"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:id="@+id/orderListTitle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderListTitle"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerViewOrderList"
+        android:layout_above="@id/totalPriceTV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="Total : "
+        android:paddingBottom="20sp"
+        android:id="@+id/totalPriceTV"/>
+
+</RelativeLayout>

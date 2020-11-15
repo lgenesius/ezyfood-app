@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/myOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/green"
+        android:text="My Order"
+        app:backgroundTint="@color/green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose The Categories"
+        android:layout_below="@+id/myOrderButton"
+        android:layout_marginTop="40sp"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:id="@+id/chooseCategory"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/chooseCategory"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedbutton"
+            app:backgroundTint="@color/green"
+            android:padding="30dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Drinks"
+            android:id="@+id/drinkButtonMenu"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundedbutton"
+            android:padding="30dp"
+            android:text="Snacks"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            android:id="@+id/snackButtonMenu"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:background="@drawable/roundedbutton"
+            app:backgroundTint="@null"
+            android:text="Foods"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp"
+            android:id="@+id/foodButtonMenu"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:background="@drawable/roundedbutton"
+            app:backgroundTint="@null"
+            android:text="Top Up"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10sp"/>
+
+
+    </GridLayout>
+
+</RelativeLayout>

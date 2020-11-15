@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailOrderActivity">
+
+    <Button
+        android:id="@+id/toOrderMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/green"
+        android:text="My Order"
+        app:backgroundTint="@color/green" />
+
+    <Button
+        android:id="@+id/orderMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/green"
+        android:text="Order More"
+        app:backgroundTint="@color/green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Order Detail"
+        android:layout_below="@+id/toOrderMenuButton"
+        android:layout_marginTop="40sp"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:id="@+id/chooseCategory"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/chooseCategory"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Capuccino Cincau"
+        android:textStyle="bold"
+        android:id="@+id/productTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/productTitle"
+        android:layout_marginTop="5sp"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:text="Rp. 2500,-"
+        android:id="@+id/productCurrency"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/productCurrency"
+        android:textSize="18sp"
+        android:textColor="@color/dark_green"
+        android:layout_marginTop="30sp"
+        android:textStyle="bold"
+        android:text="Input the Quantities"/>
+
+    <EditText
+        android:id="@+id/quantityET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:inputType="number"
+        android:backgroundTint="@color/green"/>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@null"
+        android:text="Order"
+        android:textSize="18sp"
+        android:layout_below="@id/quantityET"
+        android:layout_marginTop="50sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/orderSubmitButton"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderCompleteActivity">
+
+    <Button
+        android:id="@+id/mainMenuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@color/green"
+        android:text="Main Menu"
+        app:backgroundTint="@color/green" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Your Order Complete"
+        android:layout_below="@+id/mainMenuButton"
+        android:layout_marginTop="40sp"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:id="@+id/payTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Thank You"
+        android:layout_below="@+id/payTitle"
+        android:layout_marginTop="5sp"
+        android:textSize="22sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:id="@+id/payThankYouTitle"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payThankYouTitle"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:id="@+id/recyclerViewOrderComplete"
+        android:layout_above="@id/totalCompleteTV"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:text="Paid Total : "
+        android:paddingBottom="20sp"
+        android:id="@+id/totalCompleteTV"/>
+
+
+</RelativeLayout>
